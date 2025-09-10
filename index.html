@@ -4,20 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yifei Quan</title>
+  <meta name="description" content="Yifei Quan — Lee Kuan Yew School of Public Policy, National University of Singapore" />
   <style>
-    :root { --fg:#1a1a1a; --sub:#5b5b5b; --link:#0b6bcb; --bg:#fff; }
+    :root { --fg:#1a1a1a; --sub:#666; --link:#0b6bcb; --bg:#fff; --rule:#eee; }
     * { box-sizing: border-box; }
     body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--fg); background:var(--bg); }
-    main { max-width:720px; margin:40px auto; padding:0 20px; }
-    header { display:flex; align-items:center; gap:20px; margin-bottom:24px; }
+    main { max-width:760px; margin:42px auto; padding:0 20px; }
+    header { display:flex; align-items:center; gap:20px; margin-bottom:26px; }
     header img { width:140px; height:140px; border-radius:50%; object-fit:cover; }
     h1 { font-size:2rem; margin:0 0 6px 0; }
     p.meta { margin:0; color:var(--sub); }
     section { margin-top:28px; }
-    h2 { font-size:1.25rem; border-bottom:1px solid #eee; padding-bottom:6px; margin-bottom:12px; }
-    ul { padding-left:18px; }
+    h2 { font-size:1.15rem; border-bottom:1px solid var(--rule); padding-bottom:6px; margin:0 0 12px; }
+    ul { padding-left:18px; margin:0; }
+    li + li { margin-top:8px; }
     a { color:var(--link); text-decoration:none; }
     a:hover { text-decoration:underline; }
+    .note { color:var(--sub); font-size:.9rem; margin:6px 0 0; }
+    .me { font-weight:700; }
     footer { margin-top:36px; color:var(--sub); font-size:.9rem; }
     @media (max-width:520px){ header{flex-direction:column; align-items:flex-start;} header img{width:120px;height:120px;} }
   </style>
@@ -25,35 +29,80 @@
 <body>
   <main>
     <header>
-      <!-- 把 assets/photo.jpg 换成你的文件名 -->
-      <img src="assets/photo.jpg" alt="Portrait of Yifei Quan">
+      <!-- Replace with your actual filename in /assets if different -->
+      <img src="assets/photo.png" alt="Portrait of Yifei Quan">
       <div>
         <h1>Yifei Quan</h1>
-        <p class="meta">Lee Kuan Yew School of Public Policy, National University of Singapore</p>
+        <p class="meta">PhD Student</p>
+        <p class="meta">Lee Kuan Yew School of Public Policy</p>
+        <p class="meta">National University of Singapore</p>
         <p class="meta"><a href="mailto:yifei.quan@u.nus.edu">yifei.quan@u.nus.edu</a></p>
       </div>
     </header>
 
-    <section id="cv">
-      <h2>CV</h2>
-      <!-- 把文件名与路径对齐你的 PDF -->
-      <p><a href="assets/Yifei_Quan_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <p>Environmental Economics, Climate Policy</p>
     </section>
 
-    <section id="research">
-      <h2>Research</h2>
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <!-- 每篇论文一行，按需要增删 -->
+        <li>M.S. in Management, Tsinghua University, 2024</li>
+        <li>B.A. in Economics, Renmin University of China, 2021</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="note">* denotes corresponding author</p>
+      <ul>
         <li>
-          <strong>Paper Title 1</strong>. <em>Journal Name</em>, Year.
-          <a href="https://doi.org/xxxx" target="_blank" rel="noopener">DOI</a>
-          <!-- 如果你想放本地 PDF，可把文件放到 assets/ 并加上下面链接 -->
-          <!-- · <a href="assets/paper1.pdf" target="_blank" rel="noopener">PDF</a> -->
+          <span class="me">Quan, Y.F.</span>, Duan, M.S. &amp; Luo, C.J. (2025).
+          “Measuring implicit carbon prices of renewable energy incentives: Insights from China.”
+          <em>Energy for Sustainable Development</em>, 85: 101656.
         </li>
         <li>
-          <strong>Paper Title 2</strong>. <em>Journal Name</em>, Year.
-          <a href="https://doi.org/xxxx" target="_blank" rel="noopener">DOI</a>
+          Tan-Soo, J.S., Qin, P., <span class="me">Quan, Y.F.</span>* &amp; Li, J. (2025).
+          “Reply to: Individualized cost-benefit analysis inaccurately assesses the well-being implications of demand-side mitigation.”
+          <em>Nature Climate Change</em>, 15: 612–613.
         </li>
+        <li>
+          Tan-Soo, J.S., Qin, P., <span class="me">Quan, Y.F.</span>*, Li, J. &amp; Wang, X.X. (2024).
+          “Using cost-benefit analyses to identify key opportunities in demand-side mitigation.”
+          <em>Nature Climate Change</em>, 14: 1158–1164.
+        </li>
+        <li>
+          <span class="me">Quan, Y.F.</span> &amp; Duan, M.S. (2023).
+          “Emission reductions, industrial competitiveness, and spillover effects under China’s regional emission trading systems: Evidence from the iron and steel sector.”
+          <em>Journal of Environmental Management</em>, 344: 118481.
+        </li>
+        <li>
+          Li, J., Qin, P., <span class="me">Quan, Y.F.</span> &amp; Tan-Soo, J.S. (2023).
+          “Using Protection Motivation Theory to examine information-seeking behaviors on climate change.”
+          <em>Global Environmental Change</em>, 81: 102698.
+        </li>
+        <li>
+          Qin, P., <span class="me">Quan, Y.F.</span>, Liu, A.A., Linn, J. &amp; Yang, J. (2023).
+          “The welfare cost of Beijing’s lottery policy: Evidence from a contingent valuation survey.”
+          <em>Journal of Benefit-Cost Analysis</em>, 14(2): 251–274.
+        </li>
+        <li>
+          <span class="me">Quan, Y.F.</span> &amp; Xie, L.Y. (2022).
+          “Serendipity of vehicle ownership restrictions: Beijing’s license plate lottery cultivates non-driving behavior.”
+          <em>Transportation Research Part D: Transport and Environment</em>, 113: 103532.
+        </li>
+      </ul>
+    </section>
+
+    <section id="working-papers">
+      <h2>Working Papers</h2>
+      <ul>
+        <li>Is new always better than old? A comparison of traditional vs. novel plant-based proteins (with Tan-Soo, J.S., Qin, P. &amp; Li, J.)</li>
+        <li>Emissions abatement under a rate-based emissions trading system: Facility-level evidence from China (with Tan-Soo, J.S. &amp; Duan, M.S.)</li>
+        <li>Mining-induced deforestation challenges decarbonization potential of energy transition minerals (with Tan-Soo, J.S.)</li>
+        <li>Enterprise responses to China’s national emissions trading system: Evidence from a nationwide survey (with Wang, B.X. &amp; Duan, M.S.)</li>
+        <li>The effectiveness of unilateral fishing ban in contested waters: Evidence from the South China Sea</li>
       </ul>
     </section>
 
@@ -67,4 +116,3 @@
   </script>
 </body>
 </html>
-
