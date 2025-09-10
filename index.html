@@ -1,1 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yifei Quan</title>
+  <style>
+    :root { --fg:#1a1a1a; --sub:#5b5b5b; --link:#0b6bcb; --bg:#fff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--fg); background:var(--bg); }
+    main { max-width:720px; margin:40px auto; padding:0 20px; }
+    header { display:flex; align-items:center; gap:20px; margin-bottom:24px; }
+    header img { width:140px; height:140px; border-radius:50%; object-fit:cover; }
+    h1 { font-size:2rem; margin:0 0 6px 0; }
+    p.meta { margin:0; color:var(--sub); }
+    section { margin-top:28px; }
+    h2 { font-size:1.25rem; border-bottom:1px solid #eee; padding-bottom:6px; margin-bottom:12px; }
+    ul { padding-left:18px; }
+    a { color:var(--link); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { margin-top:36px; color:var(--sub); font-size:.9rem; }
+    @media (max-width:520px){ header{flex-direction:column; align-items:flex-start;} header img{width:120px;height:120px;} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <!-- 把 assets/photo.jpg 换成你的文件名 -->
+      <img src="assets/photo.jpg" alt="Portrait of Yifei Quan">
+      <div>
+        <h1>Yifei Quan</h1>
+        <p class="meta">Lee Kuan Yew School of Public Policy, National University of Singapore</p>
+        <p class="meta"><a href="mailto:yifei.quan@u.nus.edu">yifei.quan@u.nus.edu</a></p>
+      </div>
+    </header>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <!-- 把文件名与路径对齐你的 PDF -->
+      <p><a href="assets/Yifei_Quan_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <!-- 每篇论文一行，按需要增删 -->
+        <li>
+          <strong>Paper Title 1</strong>. <em>Journal Name</em>, Year.
+          <a href="https://doi.org/xxxx" target="_blank" rel="noopener">DOI</a>
+          <!-- 如果你想放本地 PDF，可把文件放到 assets/ 并加上下面链接 -->
+          <!-- · <a href="assets/paper1.pdf" target="_blank" rel="noopener">PDF</a> -->
+        </li>
+        <li>
+          <strong>Paper Title 2</strong>. <em>Journal Name</em>, Year.
+          <a href="https://doi.org/xxxx" target="_blank" rel="noopener">DOI</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Yifei Quan
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
